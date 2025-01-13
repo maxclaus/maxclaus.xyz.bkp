@@ -13,11 +13,14 @@
     <div class="container meta">
       <h1>Max Claus</h1>
       <div class="tagline">Senior Software Engineer</div>
-      <div class="contact">
-        <a href="mailto:maxclaus@posteo.com">maxclaus@posteo.com</a> |
-        <a href="https://maxclaus.xyz">maxclaus.xyz</a> |
-        <a href="http://github.com/maxclaus">github.com/maxclaus</a>
-        <span class="download-resume"> | <a href="{{ get_url(path="max-claus-resume.pdf") }}">Download resume</a></span>
+      <ul class="contact">
+        <li><a href="mailto:maxclaus@posteo.com">maxclaus@posteo.com</a></li>
+        <li aria-hidden="true" role="presentation"></li>
+        <li><a href="https://maxclaus.xyz">maxclaus.xyz</a></li>
+        <li aria-hidden="true" role="presentation"></li>
+        <li><a href="http://github.com/maxclaus">github.com/maxclaus</a></li>
+        <li class="download-resume" aria-hidden="true" role="presentation"></li>
+        <li class="download-resume"><a href="{{ get_url(path="max-claus-resume.pdf") }}">Download resume</a></li>
       </div>
     </div>
 
@@ -49,7 +52,15 @@
       <div class="timeline">
         <div class="work">
           <div class="work__dot"></div>
-          <h3>Staff Software Engineer<span class="work__info"> at InVisionApp Inc — Remote — Dec 2016 - Jan 2025</span></h3>
+          <header>
+            <h3>Staff Software Engineer</h3>
+            <div class="work__info">
+              <span class="work__location">
+                Worked remotely at <a href="https://www.linkedin.com/company/invisionapp">InVisionApp Inc</a> while based in Florianópolis, Brazil
+              </span>
+              <span class="work__date">(Dec 2016 - Jan 2025)</span>
+            </div>
+          </header>
           <ul>
             <li>Collaborated on many teams and worked on almost all areas of the product, such as data migration and backend for our prototyping and whiteboard apps.</li>
             <li>Led multiple technical work streams, investigated appropriate solutions, documented them in technical specifications, and collaborated with other engineers to gather feedback and ensure the chosen solutions aligned with our team and company goals.</li>
@@ -66,7 +77,15 @@
 
         <div class="work">
           <div class="work__dot"></div>
-          <h3>Senior Full Stack Software Developer<span class="work__info"> at Bravi Software — Florianopolis, Brazil — Sep 2012 - Nov 2016</span></h3>
+          <header>
+            <h3>Senior Software Developer</h3>
+            <div class="work__info">
+              <span class="work__location">
+                Worked on-site at <a href="https://www.linkedin.com/company/bravidoes">Bravi Software</a> in Florianópolis, Brazil
+              </span>
+              <span class="work__date">(Sep 2012 - Nov 2016)</span>
+            </div>
+          </header>
           <ul>
             <li>Developed Micro Services with Multi Tenancy support for different clients.</li>
             <li>Developed a notification system with targets for IOS and Android devices (push notifications), SMS and email.</li>
@@ -81,7 +100,15 @@
 
         <div class="work">
           <div class="work__dot"></div>
-          <h3>Technical Leader of the .NET team<span class="work__info"> at FTI Tecnologia da Informação — Londrina,Brazil — Oct 2012- Nov 2012</span></h3>
+          <header>
+            <h3>Tech Lead of the .NET team</h3>
+            <div class="work__info">
+              <span class="work__location">
+                Worked on-site at <a href="https://br.linkedin.com/company/ftitecnologia">FTI Tecnologia da Informação</a> in Londrina, Brazil
+              </span>
+              <span class="work__date">(Sep 2012 - Nov 2016)</span>
+            </div>
+          </header>
           <ul>
             <li>Software development with .NET framework in C# and VB.NET. Also lead the .NET team at the company.</li>
             <li>Developed a website and an application management system for house rentals.</li>
@@ -95,7 +122,15 @@
 
         <div class="work">
           <div class="work__dot"></div>
-          <h3>Software Developer <span class="work__info"> at Cantoni Revisões — Londrina, Brazil — Dec 2010 - Sep 2011</span></h3>
+          <header>
+            <h3>Software Developer</h3>
+            <div class="work__info">
+              <span class="work__location">
+                Worked on-site at <a href="https://www.linkedin.com/company/cantoni-revis-es">Cantoni Revisões</a> in Londrina, Brazil
+              </span>
+              <span class="work__date">(Dec 2010 - Sep 2011)</span>
+            </div>
+          </header>
           <ul>
             <li>
               Helped developing an application for managing all the company departaments. Composed of many modules such as: financial, human resources, task calendars and stock. I worked in all modules but was more responsible for the stock and human resource modules.
@@ -106,7 +141,15 @@
 
         <div class="work">
           <div class="work__dot"></div>
-          <h3>Trainee Web Developer  <span class="work__info"> at Weblite — Londrina, Brazil — Mar 2010 - Dec 2010</span></h3>
+          <header>
+            <h3>Trainee Web Developer</h3>
+            <div class="work__info">
+              <span class="work__location">
+                Worked on-site at <a href="#">Weblite</a> in Florianopolis, Brazil
+              </span>
+              <span class="work__date">(Mar 2010 - Dec 2010)</span>
+            </div>
+          </header>
           <ul>
             <li>It was my first professional experience as a software developer. Working in a agency gave me a great opportunity to build many different websites.</li>
             <li>Some of the technologies I have used at work include C#, .NET, SQL Server, and others.</li>
@@ -115,7 +158,15 @@
 
         <div class="work work--last">
           <div class="work__dot"></div>
-          <h3>Trainee Technical Support <span class="work__info"> at Cia Cacique — Londrina, Brazil — Sep 2008 - Mar 2010</span></h3>
+          <header>
+            <h3>Trainee Technical Support</h3>
+            <div class="work__info">
+              <span class="work__location">
+                Worked on-site at <a href="https://www.linkedin.com/company/cia-cacique-de-caf-sol-vel">Cia Cacique</a> in Florianopolis, Brazil
+              </span>
+              <span class="work__date">(Sep 2008 - Mar 2010)</span>
+            </div>
+          </header>
           <ul>
             <li>Trainee on technical support of computers.</li>
           </ul>
@@ -131,11 +182,27 @@
         <div class="timeline">
           <div class="work">
             <div class="work__dot"></div>
-            <h3>Postgraduate Degree: Computer Software Engineering <span class="work__info"> at UNIFIL — 2011-2012</span></h3>
+            <header>
+              <h3>Postgraduate Degree: Computer Software Engineering</h3>
+              <div class="work__info">
+                <span class="work__location">
+                  Studied at <a href="https://www.linkedin.com/school/unifiloficial/">UNIFIL </a> in Londrina, Brazil
+                </span>
+                <span class="work__date">(2011-2012)</span>
+              </div>
+            </header>
           </div>
           <div class="work work--last">
             <div class="work__dot"></div>
-            <h3>Bachelor's Degree: Computer Systems Analysis <span class="work__info"> at UNOPAR — 2008-2011</span></h3>
+            <header>
+              <h3>Bachelor's Degree: Computer Systems Analysis</h3>
+              <div class="work__info">
+                <span class="work__location">
+                  Studied at <a href="https://www.linkedin.com/school/unopar---universidade-norte-do-paran-">UNOPAR </a> in Londrina, Brazil
+                </span>
+                <span class="work__date">(2008-2011)</span>
+              </div>
+            </header>
           </div>
         </div>
       </div>
