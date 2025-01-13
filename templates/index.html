@@ -10,12 +10,15 @@
     <link rel="stylesheet" href="{{ get_url(path="site.css", cachebust=true) }}" />
     <!-- <link rel="shortcut icon" type="image/png" href="{{ get_url(path="favicon.ico") }}"/> -->
     <link href="{{ get_url(path="rss.xml") }}" rel="feed" type="application/rss+xml" title="{{ config.title }}" />
-    <script src="https://kit.fontawesome.com/f91b95dbd1.js" crossorigin="anonymous"></script>
+    <!-- <script src="https://kit.fontawesome.com/f91b95dbd1.js" crossorigin="anonymous"></script> -->
   </head>
 
   <header id="header">
-    <h1 class="logo"><a href="/">Max Claus</a></h1>
-    <ul>
+    <ul class="breadcrumb">
+      <li><a href="#">Max Claus</a></li>
+      {% block breadcrumb %}{% endblock breadcrumb %}
+    </ul>
+    <ul class="menu">
       <li><a href="/">About</a></li>
       <li><a href="/blog/">Blog</a></li>
       <li><a href="/resume/">Resume</a></li>
@@ -24,7 +27,7 @@
 
   <div id="content">
     {% block content %}
-    <div class="intro">
+    <div id="home-intro">
       <img class="avatar" src="/avatar.jpeg" alt="Max's profile picture">
       <p>
         Hello! I'm <b>Max</b>, a developer from Brazil.
@@ -40,7 +43,7 @@
     </div>
     {% endblock content %}
   </div>
-  <footer class="footer">
+  <footer id="footer">
     <p> Copyright © 2025 Max Claus. All rights reserved. </p>
   </footer>
 

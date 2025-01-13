@@ -1,29 +1,50 @@
-
 #header {
   display: flex;
   justify-content: space-between;
   align-items: center;
 
-  ul {
+  ul.breadcrumb {
+    font-family: 'Lora', sans-serif;
+    font-weight: 800;
+    font-size: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
     margin: 0;
     padding: 0;
-    list-style: none;
-  }
-
-  li {
-    display: inline-block;
-    margin-right: 1.2rem;
-    /* font-family: $header-font; */
-  }
-
-  .logo {
-    font-size: 1.5rem;
-    margin: 0;
+    align-items: end;
 
     a {
       color: black;
       text-decoration: none;
       border-bottom: none;
+    }
+
+    li {
+      list-style: none;
+    }
+
+    li:not(:last-child)::after {
+      display: inline-block;
+      margin: 0 0.5rem;
+      content: " ";
+      width: 2px;
+      height: 15px;
+      background: #000;
+      transform: rotate(20deg) scaleX(0.7);
+    }
+  }
+
+
+  ul.menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+      display: inline-block;
+      margin-right: 1.2rem;
+      /* font-family: $header-font; */
     }
   }
 }
@@ -32,7 +53,7 @@
   margin: 8rem auto;
 }
 
-.intro {
+#home-intro {
   margin: 0 auto;
   /* border: 1px solid black; */
   padding: 2rem;
@@ -48,28 +69,10 @@
     margin-right: 2em;
     margin-top: 1em;
   }
-
-  .social {
-    text-align: center;
-    margin-top: 2rem;
-
-    a {
-      border-bottom: none;
-    }
-
-    svg {
-      width: 30px;
-      height: 30px;
-      margin-right: 1rem;
-
-      &:hover {
-        fill: $link-color;
-      }
-    }
-  }
 }
 
-.footer {
+#footer {
   text-align: center;
   color: grey;
+  font-size: smaller;
 }
