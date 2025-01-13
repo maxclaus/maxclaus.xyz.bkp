@@ -13,6 +13,8 @@
   }
 }
 
+$post-mea-color: #9AA6B2;
+
 .post {
   &__title {
     margin-bottom: 4rem;
@@ -25,12 +27,12 @@
 
     hr {
       width: 180px;
-      border-bottom: 4px solid;
+      border: 1px solid $post-mea-color;
     }
   }
 
   &__meta {
-    color: #888;
+    color: $post-mea-color;
     margin-bottom: 1rem;
   }
 

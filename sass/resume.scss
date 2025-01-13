@@ -159,11 +159,6 @@ body:has(#resume) {
 }
 
 @media (max-width: 640px), print {
-  body:has(#resume) {
-    padding: 0.5rem 1rem;
-    margin: 0;
-  }
-
   #content:has(#resume) {
     margin: 0;
     padding: 0;
@@ -188,10 +183,6 @@ body:has(#resume) {
       max-width: 100%;
       padding: 0.5rem 1rem;
       margin-top: 0;
-    }
-
-    ul {
-      padding-left: 1rem;
     }
 
     .work {

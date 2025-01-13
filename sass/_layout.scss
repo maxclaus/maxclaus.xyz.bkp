@@ -1,3 +1,10 @@
+#root {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  padding: 2rem;
+}
+
 #header {
   display: flex;
   justify-content: space-between;
@@ -51,6 +58,7 @@
 
 #content {
   margin: 8rem auto;
+  flex-grow: 1;
 }
 
 #home-intro {
@@ -75,4 +83,14 @@
   text-align: center;
   color: grey;
   font-size: smaller;
+}
+
+@media (max-width: 640px) {
+  #content {
+    margin: 6rem auto;
+  }
+
+  #header {
+    flex-direction: column;
+  }
 }
